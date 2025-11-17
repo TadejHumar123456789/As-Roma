@@ -1,18 +1,18 @@
 # Replica of As Roma website
 * Replica of As Roma's sign-in and sign-up website. Includes sign-in and sign-up validation with SweetAlert2 pop-ups. 
 # Features
-## Login works only with:
+## 1. Login works only with:
 * Email: test@test.test
 * Password: test
-## Full validation system:
+## 2. Full validation system:
 * Missing fields
 * Invalid email format
 * Wrong password
-## Modern design
-## SweetAlert2 pop-ups
+## 3. Modern design
+## 4. SweetAlert2 pop-ups
 * Error
 * Success
-# Technologies used
+## 5. Technologies used
 * Html
 * Css
 * JavaScript
