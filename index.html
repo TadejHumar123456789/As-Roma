@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/Style.css">
 <title>AS Roma</title>
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js"></script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body class="pisavca">
 <div class="vse">
 	<div class="head">
-		<div class="logo"><img src="photos/logo.png"></div>
+		<div class="logo" id="logo"><img src="photos/logo.png"></div>
 		<h2>SIGN IN</h2>
 		<p>New User?<a class="new-account" href="Sign up.html"> Create an account</a></p> 
 		
@@ -51,90 +51,11 @@
 	
 </div>
 
-<script>
- // Ob kliku na element z ID "con" zažene funkcijo
-  document.getElementById("con").addEventListener("click", 
-  function () {
-	 // Izbere polje za email in geslo
-    const emailField = document.querySelector('input[type="email"]');
-    const passwordField = document.querySelector('input[type="password"]');
-	 // Prebere vrednosti in odstrani presledke
-    const email = emailField.value.trim();
-    const password = passwordField.value.trim();
-     // preveri ce ima mail @ .
-	const validEmail = email.includes("@") && email.includes(".");
-	 // Če email ali geslo nista vnesena, pokaže napako
-    if (!email || !password) {
-        Swal.fire({
-            title: "Missing Information",
-            text: "Please enter both email and password!",
-            icon: "error",
-            background: "#990A2C",
-            color: "#FBBA00",
-            confirmButtonColor: "#000",
-            confirmButtonText: "OK",
-            iconColor: "#FBBA00"
-        });
-    } 
-	// Če email ni veljaven, pokaže opozorilo
-    else if (!validEmail) {
-        Swal.fire({
-            title: "Invalid Email",
-            text: "Please enter a valid email address!",
-            icon: "warning",
-            background: "#990A2C",
-            color: "#FBBA00",
-            confirmButtonColor: "#000",
-            confirmButtonText: "OK",
-            iconColor: "#FBBA00"
-        });
-    } 
-	 // Če je vse v redu, izpiše prijavo in počisti polja
-    else {
-        Swal.fire({
-            title: "Welcome!",
-            text: "You are now signed in",
-            icon: "success",
-            background: "#990A2C",
-            color: "#FBBA00",
-            confirmButtonColor: "#000",
-            confirmButtonText: "Continue",
-            iconColor: "#FBBA00"
-        }).then(() => {
-		//počisti polja
-            emailField.value = "";
-            passwordField.value = "";
-        });
-    }
-});
-	// Splošen "click" listener za cel dokument
-   document.addEventListener("click", function (event) {
-    //velikost in pozicija kroga
-	const centerX = 80;
-    const centerY = 80;
-    const radius = 100;
-	//koordinati klika
-    const x = event.clientX;
-    const y = event.clientY;
-	//izracuna ce je klik v krogu
-    const distance = Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2);
-	// Če je klik znotraj kroga, prikaže "sweet alert"
-    if (distance <= radius) {
-        Swal.fire({
-            title: "Credits",
-            text: "Tadej Humar, 4.Ra",
-            icon: "success",
-            background: "#990A2C",
-            color: "#FBBA00",
-            confirmButtonColor: "#000",
-            confirmButtonText: "Continue",
-            iconColor: "#FBBA00"
-        });
-    }
-});
+<script src="JavaScript/JavaScript1.js"></script>
+ 
   
   
-</script>
+
 
 
 </body>
