@@ -1,80 +1,92 @@
+/* Nastavitve pisave za elemente s class="pisavca" */
 .pisavca{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
+  font-family: "Open Sans", sans-serif;   /* uporaba Open Sans pisave */
+  font-optical-sizing: auto;              /* optimizacija pisave */
+  font-weight: 600;                       
   font-style: normal;
-  font-variation-settings:"wdth" 100;
+  font-variation-settings:"wdth" 100;     /* širina pisave */
 }
+
+
 body {
     margin: 0;
-    font-family:sans-serif;
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-	color: #fff;
-	/*background:url('Ozadje.png') no-repeat;*/
-	justify-content: center;
-	background: #900;
-    background: radial-gradient(circle, rgba(153, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    font-family: sans-serif;
 
+    display: flex;                        /* omogoča centriranje elementov */
+    align-items: center;                  /* navpično centriranje */
+    height: 100vh;                        /* višina celotnega okna */
+	color: #fff;
+	justify-content: center;              /* centrira */
+	background: #900;                      /* osnovna barva rdeca */
+    background: radial-gradient(          /* radialni preliv */
+        circle,
+        rgba(153, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 86%,
+        rgba(0, 0, 0, 1) 100%
+    );
 }
+
+
 .have-account{
 	text-decoration: none;
     color: #900;
     font-weight: bold;
-		
 }
+
+
 .vse{
 	display: flex;
-    flex-direction: column;
-    align-items: center; /* centrira elementa skupaj */
-    margin-left: 5vw;  /*če želiš pomakniti na desno */
-	
+    flex-direction: column;                /* elementi en pod drugim */
+    align-items: center;                   /* centrirani */
+    margin-left: 5vw;                      /* premik v desno */
 }
+
+
 .logo{
 	padding-top: 30px;
 	margin-left:20px;
 }
+
+
 .head{
 	width: 400px;
     height: 185px;
-    background-color: #990A2C;
+    background-color: #990A2C;             /* rdeče ozadje */
     color: #fff;
-    background-image: url('../photos/head.png');
+    background-image: url('../photos/head.png'); /* slika v ozadju */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;          /* zaobljeni robovi zgoraj */
     border-top-right-radius: 10px;
-	
 }
+
+
 .head a{
 	color: #FBBA00;
 }
+
+
 .head h2{
-	
 	margin-left:20px;
 }
 .head p{
-	
 	margin-left:20px;
 }
 
+
 .Sign-up {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95); /*  belo ozadje */
     width: 340px;
     padding: 30px;
-    border-radius-bottom: 8px;	
+    border-bottom-left-radius: 8px;             /* spodnji zaobljeni rob */
+    border-bottom-right-radius: 8px;             /* spodnji zaobljeni rob */
     color: #000;
     margin: auto;
-    max-height: 60vh;/*najvisja visina*/ 
-    overflow-y: auto; /*scrollbar*/
-   
+    max-height: 60vh;                      /* največja višina */
+    overflow-y: auto;                      /* scrollbar, če je preveč vsebine */
 }
 
-	
 input {
     width: 100%;
     padding: 12px;
@@ -83,14 +95,18 @@ input {
     border: 0;
     font-size: 15px;
 }
+
+
 select{
-	width: 108%;
+	width: 108%;                            
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 5px;
-    border:0;
+    border: 0;
     font-size: 15px;
 }
+
+
 .con{
 	width: 100%;
     padding: 12px;
@@ -100,28 +116,35 @@ select{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-	transform: skew(-15deg);
+	transform: skew(-15deg);               /* nagib gumba */
 	text-align: center;
 }
+
+
 .policy{
 	text-decoration: none;
     font-weight: bold;
     font-size: 11px;
 	margin-bottom:50px;
 }
+
+
 .news {
     width: 100%;
-    display: flex;           
-    align-items: center;      
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
-    gap: 8px; /*razmik med flex elementi*/                
-    margin: 10px 0 16px 0;/*gor,desno,dol,levo*/
+    gap: 8px;                              /* razmik med elementi */
+    margin: 10px 0 16px 0;                 /* zgoraj, desno, spodaj, levo */
     text-align: left;
 }
+
 .inputs{
 	font-size:11px;
 	font-weight: normal;
 }
+
+
 .kvadrat {
   width: 18px;
   height: 18px;

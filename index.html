@@ -52,14 +52,18 @@
 </div>
 
 <script>
-  document.getElementById("con").addEventListener("click", function () {
+ // Ob kliku na element z ID "con" zažene funkcijo
+  document.getElementById("con").addEventListener("click", 
+  function () {
+	 // Izbere polje za email in geslo
     const emailField = document.querySelector('input[type="email"]');
     const passwordField = document.querySelector('input[type="password"]');
-
+	 // Prebere vrednosti in odstrani presledke
     const email = emailField.value.trim();
     const password = passwordField.value.trim();
-    const validEmail = email.includes("@") && email.includes(".");
-
+     // preveri ce ima mail @ .
+	const validEmail = email.includes("@") && email.includes(".");
+	 // Če email ali geslo nista vnesena, pokaže napako
     if (!email || !password) {
         Swal.fire({
             title: "Missing Information",
@@ -72,6 +76,7 @@
             iconColor: "#FBBA00"
         });
     } 
+	// Če email ni veljaven, pokaže opozorilo
     else if (!validEmail) {
         Swal.fire({
             title: "Invalid Email",
@@ -84,6 +89,7 @@
             iconColor: "#FBBA00"
         });
     } 
+	 // Če je vse v redu, izpiše prijavo in počisti polja
     else {
         Swal.fire({
             title: "Welcome!",
@@ -95,22 +101,24 @@
             confirmButtonText: "Continue",
             iconColor: "#FBBA00"
         }).then(() => {
+		//počisti polja
             emailField.value = "";
             passwordField.value = "";
         });
     }
 });
-  
+	// Splošen "click" listener za cel dokument
    document.addEventListener("click", function (event) {
-    const centerX = 80;
+    //velikost in pozicija kroga
+	const centerX = 80;
     const centerY = 80;
     const radius = 100;
-
+	//koordinati klika
     const x = event.clientX;
     const y = event.clientY;
-
+	//izracuna ce je klik v krogu
     const distance = Math.sqrt((x - centerX) ** 2 + (y - centerY) ** 2);
-
+	// Če je klik znotraj kroga, prikaže "sweet alert"
     if (distance <= radius) {
         Swal.fire({
             title: "Credits",
