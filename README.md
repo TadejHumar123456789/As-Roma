@@ -1,5 +1,10 @@
 # Replica of As Roma website
-* Replica of As Roma's sign-in and sign-up website. Includes sign-in and sign-up validation with SweetAlert2 pop-ups. 
+* Replica of As Roma's sign-in and sign-up website. Includes sign-in and sign-up validation with SweetAlert2 pop-ups.
+# Photos
+* Inspiration:
+![As Roma](photos/Inspo.png)
+* My Design:
+![As Roma](photos/My_Web.png)
 # Features
 ## 1. Login works only with:
 * Email: test@test.test
