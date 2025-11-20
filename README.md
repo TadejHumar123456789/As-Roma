@@ -25,6 +25,8 @@
 * Google Fonts
 * Custom images and icons
 # Author
-* Tadej Humar
+* Tadej Humar,4.Ra
 * 2024/25
-
+# License
+* This project is made for educational purposes.
+* Files can be used freely but not for commercial distribution.

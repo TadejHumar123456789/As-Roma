@@ -43,8 +43,11 @@ body {
 
 
 .logo{
-	padding-top: 30px;
 	margin-left:20px;
+	margin-top:10px;
+	padding-top:40px;
+	background: url('../img/logo.png');
+	background-repeat:no-repeat;
 }
 
 
@@ -53,7 +56,7 @@ body {
     height: 185px;
     background-color: #990A2C;             /* rdeče ozadje */
     color: #fff;
-    background-image: url('../photos/head.png'); /* slika v ozadju */
+    background-image: url('../img/head.png'); /* slika v ozadju */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,8 +86,8 @@ body {
     border-bottom-right-radius: 8px;             /* spodnji zaobljeni rob */
     color: #000;
     margin: auto;
-    max-height: 60vh;                      /* največja višina */
-    overflow-y: auto;                      /* scrollbar, če je preveč vsebine */
+    /*max-height: 60vh;                      /* največja višina */
+   /* overflow-y: auto;                      /* scrollbar, če je preveč vsebine */
 }
 
 input {
@@ -98,7 +101,7 @@ input {
 
 
 select{
-	width: 108%;                            
+	width: 107%;                            
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 5px;

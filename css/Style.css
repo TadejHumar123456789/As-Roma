@@ -48,8 +48,12 @@ body {
 
 
 .logo{
-	padding-top: 30px;
 	margin-left:20px;
+	margin-top:10px;
+	margin-bottom:20px;
+	padding-top:40px;
+	background: url('../img/logo.png');
+	background-repeat:no-repeat;
 }
 
 
@@ -58,7 +62,7 @@ body {
     height: 185px;
     background-color: #990A2C;           /* temno rdeča */
     color: #fff;
-    background-image: url('../photos/head.png');
+    background-image: url('../img/head.png');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -165,44 +169,51 @@ body {
 
 
 #LU{
-	margin-right:5px;
-	background: #4267B2;
-    width: 100% !important;
+	/*margin-right:2px;*/
+	background-image:url('../img/facebook.png');
+	/*background: #4267B2;*/
+    width: 151px;
 	border-radius: 3px;
     height: 45px;
 	transform: skew(-15deg);
 	text-align: center;
+	margin-left:5px;
+	
 }
 
 
 #LD{
-	margin-right:5px;
-	background: #000;
-    width: 100% !important;
+	/*margin-right:2px;*/
+	/*background: #000;*/
+    width: 151px;
 	border-radius: 3px;
     height: 45px;
 	transform: skew(-15deg);
 	text-align: center;
+	background-image:url("../img/apple.png");
+	margin-left:5px;
 }
 
 
 #RU{
-	background: #E5E5E5;
-    width: 100% !important;
+	/*background: #E5E5E5;*/
+    width: 151px;
 	border-radius: 3px;
     height: 45px;
 	transform: skew(-15deg);
 	text-align: center;
+	background-image:url("../img/google.png");
 }
 
 
 #RD{
-	background: #FF9900;
-    width: 100% !important;
+	/*background: #FF9900;*/
+    width: 151px;
 	border-radius: 3px;
     height: 45px;
 	transform: skew(-15deg);
 	text-align: center;
+	background-image:url("../img/amazon.png");
 }
 
 
